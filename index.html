@@ -2,88 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- <meta http-equiv="refresh" content="2" > -->
     <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
     <title>Bright Sparqe</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-            </div>
-            <ul class="links">
-                <li>
-                    Home
-                </li>
-                <li>
-                    Deployment
-                </li>
-                <li>
-                    About Us
-                </li>
-                <li>
-                    Contact Us
-                </li>
-            </ul>
-        </nav>
+        <div class="logo">
+        </div>
+        <div class="nav-bar">
+            <div class="nav-link"><a href="#">Home</a></div>
+            <div class="nav-link"><a href="#">Deployment</a></div>
+            <div class="nav-link"><a href="#">Donations</a></div>
+            <div class="nav-link"><a href="#">About Us</a></div>
+            <div class="nav-link"><a href="#">Contact Us</a></div>
+        </div>
     </header>
-    <div class="header-blocker">
 
-    </div>
     <!-- PHOTO CAROUSEL -->
     <div class="photo-carousel">
-        <div class="wrapper">
-            <input checked type=radio name="slider" id="slide1" />
-            <input type=radio name="slider" id="slide2" />
-            <input type=radio name="slider" id="slide3" />
-            
-            <div class="slider-wrapper">
-                <div class=inner>
-                    <article>
-                        <img src="./assets/images/slide1.jpg" />
-                    </article>
-                
-                    <article>
-                        <img src="./assets/images/slide2.jpg" />
-                    </article>
-                
-                    <article>
-                        <img src="./assets/images/slide3.jpg" />
-                    </article>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./assets/images/slide1.jpg" alt="First slide">
                 </div>
-                <!-- .inner -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/images/slide2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/images/slide3.jpg" alt="Third slide">
+                </div>
             </div>
-            <!-- .slider-wrapper -->
-            
-            <div class="slider-prev-next-control">
-                <label for=slide1></label>
-                <label for=slide2></label>
-                <label for=slide3></label>
-            </div>
-            <!-- .slider-prev-next-control -->
-            
-            <div class="slider-dot-control">
-                <label for=slide1></label>
-                <label for=slide2></label>
-                <label for=slide3></label>
-            </div>
-            <!-- .slider-dot-control -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
-    <!-- SECTION ONE -->
-    <section class="section-1">
-        <h1> 
-            TOTAL DELIVERED
-        </h1>
-    </section>
 
-    <section class="section-2">
-    </section>
+    <div class="content">
+        <!-- SECTION ONE -->
+        <section class="total-delivered">
+            <h1> 
+                TOTAL DELIVERED
+            </h1>
+            <h3>
+                Bright Sparqe outreach and partnership program has successfully collected, packaged and distributed the following food and clothes to the homeless and underprivileged:
+            </h3>
+            <div class="deliveries-grid-container">
+                <div class="deliveries-grid-square">
+                    <img src="./assets/images/bright_sparqe_breadloaves_icon_v1.0.png">
+                    <div class="number-delivered">9,464</div>
+                </div>
+                <div class="deliveries-grid-square">
+                    <img src="./assets/images/WebsiteGraphics_BreadRoll.png">
+                    <div class="number-delivered">40,930</div>
+                </div>
+                <div class="deliveries-grid-square">
+                    <img src="./assets/images/WebsiteGraphics_Upandgo.png">
+                    <div class="number-delivered">1,065</div>
+                </div>
+                <div class="deliveries-grid-square">
+                    <img src="./assets/images/WebsiteGraphics_jamportions.png">
+                    <div class="number-delivered">4,153</div>
+                </div>
+                <div class="deliveries-grid-square">
+                    <img src="./assets/images/WebsiteGraphics_sweets.png">
+                    <div class="number-delivered">4,965</div>
+                </div>
+                <div class="deliveries-grid-square">
+                    <img src="./assets/images/WebsiteGraphics_bottledwater.png">
+                    <div class="number-delivered">259</div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section-3">
-    </section>
+        <section class="br-sp-info">
+            <h1> 
+                BRIGHT SPARQE
+            </h1>
+            <h3>
+                The Bright Sparqe organisational board and team was formed by one common objective: It is our duty in caring for our community by helping the homeless and underprivileged in Australia - We believe we can make a difference.
+            </h3>
+            <div class="info-grid">
+                <div class="info-grid-square num1">
+                    <h3>
+                        CARING FOR OUR COMMUNITY
+                    </h3>
+                    <h4>
+                        There are over 105,000 homeless people in Australia. Having commenced in December 2015, Bright Sparqe collects, packs and distributes food and clothes to the homeless and underprivileged and has successfully partnered other non-for profit organisations. Bright Sparqe has completed its pilot program with great success, continuing work in Melbourne and are planning to expand throughout Australia.
+                    </h4>
+                </div>
+                <div class="info-grid-square num2">
+                    <h3>
+                        WHAT WE DELIVER
+                    </h3>
+                    <h4>
+                        Bright Sparqe collects donated end-of-day edible produce from bakeries, cafes and supermarkets and clothes from partnered clothing stores. The food, water, toiletries and clothes will be distributed to the homeless and underprivileged. The successful program has provided products directly to the rough sleepers and other partnered charities that need it the most.
+                    </h4>
+                </div>
+                <div class="info-grid-square num3">
+                    <h3>
+                        OUTREACH PROGRAM
+                    </h3>
+                    <h4>
+                        Currently Bright Sparqe executes a fortnightly outreach program. Providing the homeless food, water, toiletries and clothes. With your support we are planning to move the outreach program to a weekly occurrence and provide dinner at a centralised location in the CBD. Bright Sparqe will work closely with affiliated support services to connect the homeless and underprivileged, assisting them in getting off the street.
+                    </h4>
+                </div>
+                <div class="info-grid-square num4">
+                    <h3>
+                        WE NEED YOUR HELP
+                    </h3>
+                    <h4>
+                        One hundred percent of all revenue Bright Sparqe receives will go towards pursuing their charitable objectives. With your assistance and donations, Bright Sparqe’s outreach program will occur more regularly and we are able to expand our partnerships with other charitable organisations. This will enable an increase in the distribution of food, bottled water and clothes to more homeless and underprivileged people. Your donations will enable Bright Sparqe to purchase a vehicle, commence a homeless support clinic where we can provide assistance, counselling, training and support. It will also enable Bright Sparqe to deploy the initiative to other cities in Australia.
+                    </h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-3">
+        </section>
 
     </div>
 </body>
