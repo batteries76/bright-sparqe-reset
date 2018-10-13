@@ -223,6 +223,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .br-sp-objectives img {
@@ -243,7 +244,7 @@ a {
 }
 
 .forms-section img {
-    max-width: 160px;
+    max-width: 190px;
     width: 100%;
 }
 
@@ -254,9 +255,22 @@ a {
 form {
     display: flex;
     flex-direction: column;
+    /* justify-content: space-around; */
     padding: 25px;
     background-color: lightgrey;
-    min-width: 340px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: -8px;
+}
+
+textarea {
+    width: 100%;
+    height: 10em;
 }
 
 form label {
@@ -269,8 +283,20 @@ form label {
     justify-content: space-around;
     align-items: center;
     /* border-style: solid; */
-    /* min-width: 600px; */
-    height: 520px;
+    min-width: 370px;
+    height: auto;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.deployment {
+    display: flex;
+    flex-direction: column;
+}
 }
 
 /* @media screen and (min-width: 790px) {
