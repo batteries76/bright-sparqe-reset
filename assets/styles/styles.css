@@ -241,6 +241,7 @@ a {
     justify-content: space-around;
     flex-flow: wrap;
     width: 100%;
+    margin-bottom: 45px;
 }
 
 .forms-section img {
@@ -293,14 +294,116 @@ form label {
     align-items: flex-start;
 }
 
-.deployment {
+.deployment-and-production {
     display: flex;
     flex-direction: column;
-}
+    margin-bottom: 50px; 
 }
 
-/* @media screen and (min-width: 790px) {
-    .info-grid {
+.deployment-and-production h1 {
+    margin-bottom: 18px;
+    color: red;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.deployment-and-production h2 {
+    color: navy;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.deployment-and-production .deliveries-grid-container {
+    margin-bottom: 40px; 
+}
+
+.donation-area h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.donation-area h3 {
+    width: 80%;
+    padding-bottom: 25px;
+    margin: auto;
+}
+
+.donations-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+}
+
+.flex-circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.donation-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 50%;
+	width: 100px;
+    height: 100px; 
+    background-color: #e74c3c;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.donations-images-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 600px; */
+}
+
+.donations-bar img {
+    max-width: 200px;
+}
+
+.donations-main-images img {
+    width: 85%;
+    padding: 5px;
+}
+
+.donations-main-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-and-forms {
+    height: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+#donations-pic-two {
+    padding-bottom: 42px;
+}
+
+@media screen and (max-width: 790px) {
+    .donations-flex {
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+    .donations-main-images {
+        flex-direction: row;
+    }
+    .info-and-forms {
+        width: 100%;
+    }
+    #donations-pic-two {
+        padding-bottom: 0px;
+    }
+    /* .info-grid {
         background-color: greenyellow;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 4fr));
@@ -308,5 +411,5 @@ form label {
         grid-gap: 2.2rem 1.3rem;
         margin-left: 1.5em;
         margin-right: 1.5em;
-    }
-} */
+    } */
+}
