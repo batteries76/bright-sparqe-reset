@@ -143,7 +143,7 @@ a {
 }
 
 /* INFO */
-.info-grid {
+.info-grid, .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
     grid-template-rows: auto;
@@ -388,6 +388,136 @@ form label {
 #donations-pic-two {
     padding-bottom: 42px;
 }
+
+.donors-and-supporters {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+    width: 100%;
+}
+
+.donors-and-supporters h1 {
+    padding-bottom: 20px;
+}
+
+.bright-sparqe-donors, .bright-sparqe-supporters {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.donor-icons, .supporter-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* width: 800px; */
+}
+
+.about-bright-sparqe {
+    text-align: center;
+}
+
+.about-bright-sparqe h1 {
+    margin-bottom: 25px;
+}
+
+.team-grid {
+    max-width: 100%;
+}
+
+.num2-team {
+    border-color: #7dbb18;
+}
+
+.num3-team {
+    border-color: #00cccc;
+}
+
+.num5-team {
+    border-color: #7dbb18;
+}
+
+.num6-team {
+    border-color: #00cccc;
+}
+
+.num7-team {
+    border-color: #e74c3c;
+}
+
+.num1-team:hover {
+    background-color: #e74c3c;
+    -webkit-transition: background-color 1s;
+
+}
+
+.num1-team:hover h3 {
+    color: white;
+}
+
+.num2-team:hover {
+    background-color: #7dbb18;
+    -webkit-transition: background-color 1s;
+
+}
+
+.num2-team:hover h3 {
+    color: white;
+}
+
+.num3-team:hover {
+    background-color: #00cccc;
+    -webkit-transition: background-color 1s;
+}
+
+.num3-team:hover h3 {
+    color: white;
+}
+
+.num4-team:hover {
+    background-color: #e74c3c;
+    -webkit-transition: background-color 1s;
+
+}
+
+.num4-team:hover h3 {
+    color: white;
+}
+
+.num5-team:hover {
+    background-color: #7dbb18;
+    -webkit-transition: background-color 1s;
+
+}
+
+.num5-team:hover h3 {
+    color: white;
+}
+
+.num6-team:hover {
+    background-color: #00cccc;
+    -webkit-transition: background-color 1s;
+
+}
+
+.num6-team:hover h3 {
+    color: white;
+}
+
+.num7-team:hover {
+    background-color: #e74c3c;
+    -webkit-transition: background-color 1s;
+
+}
+
+.num7-team:hover h3 {
+    color: white;
+}
+
+
 
 @media screen and (max-width: 790px) {
     .donations-flex {
