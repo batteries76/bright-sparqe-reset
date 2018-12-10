@@ -826,13 +826,4 @@ form label {
     .link-wrap {
         display: none;
     }
-    /* .info-grid {
-        background-color: greenyellow;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 4fr));
-        grid-template-rows: 20em;
-        grid-gap: 2.2rem 1.3rem;
-        margin-left: 1.5em;
-        margin-right: 1.5em;
-    } */
 }
