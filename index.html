@@ -11,6 +11,7 @@
     <!-- <meta http-equiv="refresh" content="2" > -->
     <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
     <title>Bright Sparqe</title>
+    <script src="/assets/javascripts/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -312,7 +313,7 @@
                                     </div>
                                 </div>
                                 <label for="name">AMOUNT:</label>
-                                <input type="text" id="org-name" name="user_org_name">
+                                <input type="text" id="donation-amount" name="user_org_name" value="0">
                             </div>
                         </form>
                     </div>
@@ -499,7 +500,7 @@
             </div>
         </section>
         <section class="contact-us">
-            <h1>
+            <h1 id="contact-us-heading">
                 Contact Us
             </h1>
             <div class="contact-us-form">

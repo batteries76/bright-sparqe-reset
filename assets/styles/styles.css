@@ -351,8 +351,13 @@ form label {
 	border-radius: 50%;
 	width: 100px;
     height: 100px; 
-    background-color: #e74c3c;
+    background-color: #85c1e9;
 	/* width and height can be anything, as long as they're equal */
+}
+
+.donation-circle:hover {
+    background-color: #FF4081;
+    -webkit-transition: background-color 0.35s;
 }
 
 .donations-images-section {
@@ -529,6 +534,11 @@ form label {
     width: 100%;
 }
 
+#contact-us-heading {
+    color: red;
+    font-weight: 600;
+}
+
 .contact-us h1 {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -597,11 +607,11 @@ form label {
 
 .footer-upper {
     display: flex;
-    width: 100%;
     flex-direction: row;
     justify-content: space-around;
     padding: 15px;
     height: 75%; 
+    width: 100%;
 }
 
 .footer-lower {
@@ -611,6 +621,11 @@ form label {
     background-color: #282a2e;
     height: 100px;
     width: 100%;
+    padding: 10px;
+}
+
+.newsletter form {
+    background-color: #FF4081;
 }
 
 @media screen and (max-width: 790px) {
@@ -628,6 +643,10 @@ form label {
         padding-bottom: 0px;
     }
     .contact-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-upper {
         flex-direction: column;
         align-items: center;
     }
