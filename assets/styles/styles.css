@@ -352,6 +352,7 @@ form label {
 	width: 100px;
     height: 100px; 
     background-color: #85c1e9;
+    -webkit-transition: background-color 0.35s
 	/* width and height can be anything, as long as they're equal */
 }
 
