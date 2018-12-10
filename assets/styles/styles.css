@@ -629,6 +629,23 @@ form label {
     background-color: #FF4081;
 }
 
+.subscribe-form {
+    display: flex;
+}
+
+.social-media {
+    width: 200px;
+}
+
+.social-media-text {
+    margin-bottom: 10px;
+}
+
+.social-media-images {
+    display: flex;
+    justify-content: space-around;
+}
+
 @media screen and (max-width: 790px) {
     .donations-flex {
         flex-direction: column;
