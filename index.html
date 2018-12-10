@@ -12,19 +12,38 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
     <title>Bright Sparqe</title>
     <script src="/assets/javascripts/main.js" defer></script>
+
 </head>
 <body>
     <header>
         <div class="logo">
         </div>
         <div class="nav-bar">
-            <div class="nav-link"><a href="#">Home</a></div>
-            <div class="nav-link"><a href="#">Deployment</a></div>
-            <div class="nav-link"><a href="#">Donations</a></div>
-            <div class="nav-link"><a href="#">About Us</a></div>
-            <div class="nav-link"><a href="#">Contact Us</a></div>
+            <div class="burger-wrap">
+                <button class="hamburger hamburger--emphatic is-active" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+            <div class="link-wrap">
+                <a class="nav-link" href="#">Home</a>
+                <div class="nav-link"><a href="#">Deployment</a></div>
+                <div class="nav-link"><a href="#">Donations</a></div>
+                <div class="nav-link"><a href="#">About Us</a></div>
+                <div class="nav-link"><a href="#">Contact Us</a></div>
+            </div>
         </div>
     </header>
+    <div class="drop-down-wrap">
+        <div class="nav-link-drop-area no-display">
+            <a class="nav-link-drop" href="#">Home</a>
+            <div class="nav-link-drop"><a href="#">Deployment</a></div>
+            <div class="nav-link-drop"><a href="#">Donations</a></div>
+            <div class="nav-link-drop"><a href="#">About Us</a></div>
+            <div class="nav-link-drop"><a href="#">Contact Us</a></div>
+        </div> 
+    </div>
 
     <!-- PHOTO CAROUSEL -->
     <div class="photo-carousel">
