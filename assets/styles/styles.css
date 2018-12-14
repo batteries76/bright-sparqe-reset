@@ -533,15 +533,15 @@ form label {
     max-width: 200px;
 }
 
-.donations-main-images img {
-    width: 85%;
-    padding: 5px;
-}
-
 .donations-main-images {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.donations-main-images img {
+    width: 85%;
+    padding: 5px;
 }
 
 .info-and-forms {
@@ -814,6 +814,7 @@ form label {
     }
     .donations-main-images {
         flex-direction: row;
+        width: 100%;
     }
     .info-and-forms {
         width: 100%;
@@ -837,5 +838,9 @@ form label {
     }
     .link-wrap {
         display: none;
+    }
+    .donations-main-images img {
+        width: 48%;
+        padding: 5px;
     }
 }
