@@ -49,12 +49,22 @@ const dropDown = document.querySelector(".nav-link-drop-area")
 hamburger.classList.toggle("is-active");
 
 // On click
-hamburger.addEventListener("click", function() {
+hamburger.addEventListener('click', function() {
     // Toggle class "is-active"
     hamburger.classList.toggle("is-active");
     // Do something else, like open/close menu
     // dropDown.style.background = "red"
     dropDown.classList.toggle("no-display")
+    dropDown.classList.toggle("display")
 
 })
 
+const navLinkDropArray = document.querySelectorAll(".nav-link-drop")
+
+navLinkDropArray.forEach((navLink) => {
+    navLink.addEventListener('click', () => {
+        hamburger.classList.toggle("is-active");
+        dropDown.classList.toggle("no-display")
+        dropDown.classList.toggle("display")
+    })
+})

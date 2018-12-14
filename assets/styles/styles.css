@@ -50,7 +50,7 @@ header {
     background-color: #333131;
     width: 100%;
     z-index: 10;
-    border-bottom: 2px solid rgb(57, 64, 71);
+    border-bottom: 2px groove rgb(57, 64, 71);
 }
 
 .logo {
@@ -172,8 +172,9 @@ header {
 .nav-link-drop-area {
     display: flex;
     opacity: 1.0;
-    /* transition: opacity 5s ease-in; */
-    transition: opacity 2s linear;
+    visibility: visible;
+    /* transition: opacity 2s; */
+    transition: visibility 2s, opacity 2s linear;
     flex-direction: column;
     background-color: #333131;
     color: white;
@@ -187,9 +188,19 @@ header {
     width: 100%;
 }
 
-.nav-link-drop-area.no-display {
-    transition: opacity 0.5s;
-    opacity: 0.0;
+.display {
+    opacity: 1.0;
+    visibility: visible;
+    /* transition: opacity 2s; */
+    transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+.no-display {
+    /* transition: opacity 0.5s;
+    opacity: 0.0; */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s linear;
 }
 
 .nav-link-drop {
@@ -199,6 +210,7 @@ header {
     align-items: center;
     height: 60px;
     padding-left: 30px;
+    border-bottom: 2px groove rgb(57, 64, 71);
 }
 
 .nav-link-drop-area a:hover {
