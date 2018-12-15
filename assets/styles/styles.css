@@ -540,7 +540,7 @@ form label {
 }
 
 .donations-main-images img {
-    width: 85%;
+    width: 95%;
     padding: 5px;
 }
 
@@ -810,6 +810,9 @@ form label {
 @media screen and (max-width: 790px) {
     .donations-flex {
         flex-direction: column;
+        width: 100%;
+        align-items: center;
+        /* margin: 0; */
         /* justify-content: space-around; */
     }
     .donations-main-images {
@@ -817,7 +820,7 @@ form label {
         width: 100%;
     }
     .info-and-forms {
-        width: 100%;
+        width: 85%;
     }
     #donations-pic-two {
         padding-bottom: 0px;
