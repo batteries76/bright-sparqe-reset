@@ -68,3 +68,29 @@ navLinkDropArray.forEach((navLink) => {
         dropDown.classList.toggle("display")
     })
 })
+
+const creditCardInput = document.querySelector("#credit-card")
+
+creditCardInput.addEventListener('keyup', (e) => {
+    if (creditCardInput.value.length == 4) {
+        console.log(creditCardInput.value)
+        creditCardInput.value = creditCardInput.value + " "
+    }
+    if (creditCardInput.value.length == 9) {
+        console.log(creditCardInput.value)
+        creditCardInput.value = creditCardInput.value + " "
+    }
+    if (creditCardInput.value.length == 14) {
+        console.log(creditCardInput.value)
+        creditCardInput.value = creditCardInput.value + " "
+    }
+})
+
+const creditCardExp = document.querySelector("#cc-exp")
+
+creditCardExp.addEventListener('keyup', (e) => {
+    if (creditCardExp.value.length == 2) {
+        console.log(creditCardExp.value)
+        creditCardExp.value = creditCardExp.value + " - "
+    }
+})
