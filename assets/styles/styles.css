@@ -882,7 +882,7 @@ textarea {
     text-align: center;
 }
 
-.terms-and-conditions, .privacy-policy {
+.terms-and-conditions-expand-button, .privacy-policy-expand-button, .terms-and-conditions-compress-button, .privacy-policy-compress-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -890,12 +890,26 @@ textarea {
     height: 50px;
     width: 120px;
     margin-left: 15px;
+    margin-bottom: 15px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s linear;
+}
+
+.terms-and-conditions-compress-button, .privacy-policy-compress-button {
+    margin-top: 20px;
+}
+
+.terms-and-conditions-expand-button:hover, .privacy-policy-expand-button:hover, .terms-and-conditions-compress-button:hover, .privacy-policy-compress-button:hover {
+    background-color: #337ab7;
+    color: white;
+    transition: color 0.5s, background-color 0.5s linear;
 }
 
 .legal {
+    position: relative;
     padding-bottom: 30px;
     width: 100%;
     padding-left: 10px;
+    height: auto;
 }
 
 #legal-heading {
@@ -905,6 +919,58 @@ textarea {
 .legal h1 {
     padding-top: 25px;
     padding-bottom: 15px;
+}
+
+.terms-and-conditions {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.privacy-policy-details, .terms-and-conditions-details {
+    /* display: none; */
+    visibility: hidden;
+    height: 0;
+    width: 85%;
+    overflow: hidden;
+    transition: visibility 1s, height 1s linear;
+    margin-left: 40px;
+}
+
+.terms-privacy-button-clicked {
+    background-color: #337ab7;
+    border: 1px solid #2e6da4;
+    color: white;
+    transition: background-color 0.5s, border 0.5s, color 0.5s linear;
+}
+
+.terms-privacy-button-clicked:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: background-color 0.5s, border 0.5s, color 0.5s linear;
+}
+
+.terms-appear {
+    /* display: block; */
+    visibility: visible;
+    /* height: auto; */
+    transition: height 2s linear;
+    height: 3000px;
+    width: 85%;
+}
+
+.privacy-appear {
+    /* display: block; */
+    visibility: visible;
+    /* height: auto; */
+    transition: height 2s linear;
+    height: 2360px;
+    width: 85%;
+}
+
+.terms-and-conditions-details-text h1 {
+    color: black;
 }
 
 .footer-item {
@@ -938,6 +1004,18 @@ textarea {
 
 .newsletter form {
     background-color: #FF4081;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 5px;
+    padding-left: 25px;
+}
+
+.newsletter button {
+    border: 1px solid black;
+    padding: 15px 35px;
+    background-color: white;
+    font-size: 14px;
+    /* margin-top: 25px; */
 }
 
 .subscribe-form {

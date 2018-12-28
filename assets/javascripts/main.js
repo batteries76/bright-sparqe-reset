@@ -94,3 +94,52 @@ creditCardExp.addEventListener('keyup', (e) => {
         creditCardExp.value = creditCardExp.value + " - "
     }
 })
+
+const privacyButton = document.querySelector(".privacy-policy-expand-button")
+const privacyDetails = document.querySelector(".privacy-policy-details")
+
+const termsButton = document.querySelector(".terms-and-conditions-expand-button")
+const termsDetails = document.querySelector(".terms-and-conditions-details")
+
+termsButton.addEventListener('click', () => {
+    console.log("termsButton was hit")
+    termsDetails.classList.toggle("terms-appear")
+    termsButton.classList.toggle("terms-privacy-button-clicked")
+    if (termsDetails.classList.contains("terms-appear")) {
+        termsButton.innerText = "Compress.."
+    } else {
+        termsButton.innerText = "Expand.."
+    }
+})
+
+privacyButton.addEventListener('click', () => {
+    console.log("privacyButton was hit")
+    privacyDetails.classList.toggle("privacy-appear")
+    privacyButton.classList.toggle("terms-privacy-button-clicked")
+    if (privacyDetails.classList.contains("privacy-appear")) {
+        privacyButton.innerText = "Compress.."
+    } else {
+        privacyButton.innerText = "Expand.."
+    }
+})
+
+const privacyCollapseButton = document.querySelector(".privacy-policy-compress-button")
+
+privacyCollapseButton.addEventListener('click', () => {
+    console.log("privacyCollapseButton was hit")
+    privacyDetails.classList.toggle("privacy-appear")
+    if (privacyDetails.classList.contains("privacy-appear")) {
+        privacyButton.innerText = "Compress.."
+    } else {
+        privacyButton.innerText = "Expand.."
+    }
+})
+
+const termsCollapseButton = document.querySelector(".terms-and-conditions-compress-button")
+
+termsCollapseButton.addEventListener('click', () => {
+    console.log("termsCollapseButton was hit")
+    termsDetails.classList.toggle("terms-appear")
+    termsButton.classList.toggle("terms-privacy-button-clicked")
+    termsButton.innerText = "Expand.."
+})
