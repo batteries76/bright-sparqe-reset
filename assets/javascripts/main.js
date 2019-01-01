@@ -143,3 +143,22 @@ termsCollapseButton.addEventListener('click', () => {
     termsButton.classList.toggle("terms-privacy-button-clicked")
     termsButton.innerText = "Expand.."
 })
+
+scrollDiv = document.querySelector(".scroll-to-top");
+
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 300) {
+    scrollDiv.classList.add('scroll-show')
+  } else {
+    scrollDiv.classList.remove('scroll-show')
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+
+$('.scroll-to-top').click(function(e){
+    const $target = $("html, body");
+    console.log($target)
+    $target.animate({scrollTop: 0}, 1500);
+});
